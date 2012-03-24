@@ -45,7 +45,7 @@ namespace DigiRec {
 
 			try {
 				udpClient = new UdpClient(remotePort);
-
+				udpClient.Client.ReceiveBufferSize = 40960;
 				udpClient.JoinMulticastGroup(IPAddress.Parse(remoteAddress), 1);
 				IPEndPoint ipEndPoint = new IPEndPoint(IPAddress.Any, 0);
 
