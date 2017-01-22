@@ -6,7 +6,9 @@ Service can be installed via console that has administrative privileges.
 
 Schedule file is called `schedule.txt` and must be saved into the same folder next to service executable. File has following format:
 ```
-	<startDate>t<endDate>t<udpBroadCastaddress>t<localFileName>
+	<startDate>\t<endDate>\t<udpBroadCastaddress>\t<localFileName>
 ```
 
 Service must be manually allowed through local firewall, otherwise the file is created but the data cannot be retrieved and file size will remain 0.
+
+This is a source release only, no precompiled binaries are available.
